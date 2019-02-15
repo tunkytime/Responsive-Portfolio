@@ -123,8 +123,7 @@ li a:hover {
   margin-left: -8px;
   margin-right: -8px;
   margin-top: -8px;
-
-  height: 1000px;
+  min-height: 750px;
 }
 
 .main-image {
@@ -136,7 +135,7 @@ li a:hover {
 .about-me {
   background: #fff;
   width: 960px;
-  height: 550px;
+  min-height: 500px;
   margin: 0 auto 20px auto;
   padding: 10px 20px 50px 20px;
   position: relative;
@@ -146,11 +145,15 @@ li a:hover {
 .portfolio {
   background: #fff;
   width: 960px;
-  height: 860px;
+  min-height: 600px;
   margin: 0 auto;
   padding: 10px 25px;
   position: relative;
   top: 40px;
+}
+
+.portfolio-thumbnails {
+	margin: 0 auto;
 }
 
 .contact {
@@ -168,15 +171,14 @@ hr {
 }
 
 .project-img {
-  margin: 30px 12px 0 12px;
-  float: left;
-  width: 278px;
+  margin: 10px;
+  width: 280px;
   box-shadow: 5px 10px 10px lightgrey;
 }
 
 .project-img:hover {
   box-shadow: 5px 10px 10px lightgrey;
-  transform: translateY(7px);
+  transform: translateY(5px);
 }
 
 /* contact form */
@@ -249,66 +251,128 @@ footer {
 /* media queries */
 
 @media only screen and (max-width: 980px) {
-  .about-me {
-    margin: 0 auto 20px auto;
-    width: 960px;
-    height: 500px;
-    margin: 0 auto;
-  }
 
-  .portfolio {
-    margin: 0 auto 20px auto;
-    width: 960px;
-    height: 500px;
-    margin: 0 auto;
-  }
+		.about-me {
+			width: 960px;
+			margin: 0 auto;
+		}
 
-  .contact {
-    margin: 0 auto 20px auto;
-    width: 960px;
-    height: 500px;
-    margin: 0 auto;
-  }
-}
+		.portfolio {
+			width: 960px;
+			margin: 0 auto;
+		}
+
+		.contact {
+			width: 960px;
+			margin: 0 auto;
+		}
+	}
 
 @media only screen and (max-width: 768px) {
-  .about-me {
-    margin: 0 auto 20px auto;
-    width: 650px;
-    height: 550px;
-    margin: 0 auto;
-  }
-  .portfolio {
-    margin: 0 auto 20px auto;
-    width: 650px;
-    height: 550px;
-    margin: 0 auto;
-  }
-  .contact {
-    margin: 0 auto 20px auto;
-    width: 650px;
-    height: 550px;
-    margin: 0 auto;
-  }
-}
+
+		header {
+			width: 768px;
+			margin: 0 auto;
+			background: green;
+			background: #fff;
+			}
+			
+		nav {
+			text-align: right;
+			position: relative;
+			top: 10px;
+			left: -140px;
+			padding: 10px;
+			}
+
+		.about-me {
+			width: 650px;
+			margin: 0 auto;
+			}
+		  
+		.portfolio {
+			width: 650px;
+			margin: 0 auto;
+			}
+		  
+		.project-img {
+			width: 250px;
+			}
+		  
+		.portfolio-thumbnails {
+			width: 550px;
+			margin: 0 auto;
+			}
+		  
+		.contact {
+			width: 650px;
+			margin: 0 auto;
+			}
+	}
 
 @media only screen and (max-width: 640px) {
-  .about-me {
-    margin: 0 auto 20px auto;
-    width: 375px;
-    height: 700px;
-    margin: 0 auto;
-  }
-  .portfolio {
-    margin: 0 auto 20px auto;
-    width: 375px;
-    height: 700px;
-    margin: 0 auto;
-  }
-  .contact {
-    margin: 0 auto 20px auto;
-    width: 375px;
-    height: 700px;
-    margin: 0 auto;
-  }
-}
+
+		header {
+			width: 640px;
+			margin: 0 auto;
+			background: green;
+			background: #fff;
+		}
+
+		.name a {
+			background: #4aaaa5;
+			color: white;
+			font-family: "Georgia", Times, Times New Roman, serif;
+			text-decoration: none;
+			padding: 34px 20px;
+			float: left;
+			font-size: 24px;
+			font-weight: bold;
+			position: absolute;
+			top: 3px;
+			z-index: 10;
+		}
+
+		.background-name {
+			display: none;
+		}
+
+		nav {
+			text-align: right;
+			position: relative;
+			top: 25px;
+			left: -235px;
+			padding: 10px;
+		}
+
+		nav a {
+			font-size: 70%;
+			padding: 5px;
+		}
+
+		.about-me {
+			width: 375px;
+			margin: 0 auto;
+		}
+
+		.portfolio {
+			width: 375px;
+			margin: 0 auto;
+		}
+
+		.portfolio-thumbnails {
+			width: 340px;
+			margin: 0 auto 50px auto;
+		}
+
+		.project-img {
+			margin: 10px;
+			width: 300px;
+			box-shadow: 5px 10px 10px lightgrey;
+		}
+
+		.contact {
+			width: 375px;
+			margin: 0 auto;
+		}
+	}
